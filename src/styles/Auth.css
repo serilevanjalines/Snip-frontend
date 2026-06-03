@@ -1,4 +1,4 @@
-.auth-container {
+/* .auth-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,5 +64,119 @@
 .auth-card a {
   color: #667eea;
   cursor: pointer;
+  text-decoration: underline;
+} */
+
+
+
+
+
+
+
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 48px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.05),
+    0 10px 30px rgba(0,0,0,0.04);
+}
+
+.auth-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.auth-card h1::after {
+  content: "Short URLs. Simplified.";
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 36px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+
+  background: #fafafa;
+
+  font-size: 15px;
+
+  transition: all 0.2s ease;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #111111;
+  background: #ffffff;
+}
+
+.auth-card button {
+  margin-top: 8px;
+
+  padding: 16px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #111111;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.auth-card button:hover {
+  background: #222222;
+  transform: translateY(-1px);
+}
+
+.auth-card p {
+  text-align: center;
+  margin-top: 28px;
+  color: #6b7280;
+}
+
+.auth-card a {
+  color: #111111;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.auth-card a:hover {
   text-decoration: underline;
 }
