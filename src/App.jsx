@@ -10,7 +10,7 @@ function App() {
 
   const handleLogin = async (email, password) => {
     try {
-      const response = await fetch("http://localhost:8080/auth/login", {
+      const response = await fetch("https://snip-omzp.onrender.com/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
@@ -30,7 +30,7 @@ function App() {
 
   const handleRegister = async (email, password) => {
     try {
-      const response = await fetch("http://localhost:8080/auth/register", {
+      const response = await fetch("https://snip-omzp.onrender.com/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })

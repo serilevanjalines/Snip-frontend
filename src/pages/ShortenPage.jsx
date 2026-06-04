@@ -9,7 +9,7 @@ function ShortenPage({ token, handleLogout }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8080/urls", {
+      const response = await fetch("https://snip-omzp.onrender.com/urls", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
